@@ -2,5 +2,4 @@
 Here i'll explain all the modules that i have solved of pwn college
 
 
-![image](https://github.com/user-attachments/assets/4bb234e9-60a4-4387-86d0-ef51767aac93)
-
+![screenshot_283929919_ghddbsb](https://github.com/user-attachments/assets/d4670826-72a3-4232-a1ef-9ac337a7fbb2)
