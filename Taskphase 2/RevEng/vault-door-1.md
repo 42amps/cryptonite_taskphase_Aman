@@ -4,8 +4,8 @@ We can do it manually or we can write a script which will do it for us.
 
 __Flag__: `picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_ff63b0}`
 
-```
-public class PasswordSolver {
+```java
+public class vaultDoor1 {
     public static void main(String[] args) {
         // Initialize an array of length 32 (since the password length is 32)
         char[] password = new char[32];
