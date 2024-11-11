@@ -13,7 +13,7 @@ Now to decode this, we need to reverse the process:
 - Reverse the XOR operation by XORing the result with `0x55`.
 
 Here is a script that does the job for us:
-```
+```java
 import java.util.*;
 
 class Main {  // Class name should be capitalized (Main)
