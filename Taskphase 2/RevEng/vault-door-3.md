@@ -19,7 +19,7 @@ It took a bit of analysis, but here’s what I found out
 
 With this pattern figured out, I wrote a simple script to reverse-engineer the password and print it out:
 
-```
+```java
 public class VaultDoor3Solver {
     public static void main(String[] args) {
         char[] target = "jU5t_a_sna_3lpm18gb41_u_4_mfr340".toCharArray();
