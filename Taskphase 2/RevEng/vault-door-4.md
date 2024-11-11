@@ -3,11 +3,12 @@
 In this challenge, we had to convert the byte array that was given into characters.
 
 Structure of myBytes Array:
-  `myBytes` is a predefined array containing `32` elements. Each element is defined using different numerical bases:
-        Decimal: Values like `106`, `85`, `53`.
-        Hexadecimal: Values prefixed with `0x`, e.g., `0x55`, `0x6e`.
-        Octal: Values prefixed with a leading zero, e.g., `0142`, `0131`.
-        Character literals: `a`, `8`, etc.
+  `myBytes` is a predefined array containing `32` elements. Each element is defined using different numerical bases
+  
+- Decimal: Values like `106`, `85`, `53`.
+- Hexadecimal: Values prefixed with `0x`, e.g., `0x55`, `0x6e`.
+- Octal: Values prefixed with a leading zero, e.g., `0142`, `0131`.
+- Character literals: `a`, `8`, etc.
 
 Each element in `myBytes` represents a character in the password. By converting each byte to a character, you can reconstruct the password.
 
