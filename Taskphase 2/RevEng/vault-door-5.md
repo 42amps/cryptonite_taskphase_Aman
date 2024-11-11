@@ -11,7 +11,7 @@ Now to solve this, we need to reverse the encoding steps:
 - After that we need to URL-decode the resulting string from the base64 decode.
 
 Here's a script that does the job.
-```
+```java
 import java.net.URLDecoder;
 import java.util.Base64;
 
