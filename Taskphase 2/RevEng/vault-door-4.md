@@ -13,7 +13,7 @@ Structure of myBytes Array:
 Each element in `myBytes` represents a character in the password. By converting each byte to a character, you can reconstruct the password.
 
 Using a simple script:
-```
+```java
 public class Main {
     public static void main(String[] args) {
         byte[] myBytes = {
