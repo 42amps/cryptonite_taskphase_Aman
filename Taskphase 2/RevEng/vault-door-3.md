@@ -2,13 +2,23 @@
 Ths challenge was a bit trickier than the previous one.
 
 When you look at the source code, you'll notice that the password is hidden using a bunch of for loops.
-It took a bit of analysis, but here’s what I found out:
-    1. The first 8 characters of buffer are exactly the same as the first 8 characters of password.
-    2. The next block of 8 characters (positions 8 to 15) are placed in reverse order in buffer.
-    3. For even indices from 16 to 30, `buffer[i] = password.charAt(46 - i)`.
-    4. For odd indices, moving backward from 31 to 17, `buffer[i]` just takes the characters directly from password.
+It took a bit of analysis, but here’s what I found out
+
+- The first 8 characters of `buffer` are exactly the same as the first 8 characters of `password`.  
+  `buffer[0-7] = password[0-7]`
+  
+- The next block of 8 characters (positions 8 to 15) are placed in reverse order in `buffer`.  
+  `buffer[8-15] = reverse(password[8-15])`
+
+- For even indices from 16 to 30, `buffer[i] = password.charAt(46 - i)`.  
+  `buffer[16-30] = password[46-i]` for even `i`
+
+- For odd indices, moving backward from 31 to 17, `buffer[i]` directly takes the characters from `password`.  
+  `buffer[17-31] = password[17-31]` for odd `i`
+
 
 With this pattern figured out, I wrote a simple script to reverse-engineer the password and print it out:
+
 ```
 public class VaultDoor3Solver {
     public static void main(String[] args) {
